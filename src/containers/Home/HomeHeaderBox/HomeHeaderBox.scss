@@ -38,4 +38,20 @@
             }
         }
     }
+
+
+    &.home-header-box-2 {
+        .content-box {
+            .wrap-content-box {
+
+                .title-box {
+                    color: $primary_1;
+                }
+
+                .description-box {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
 }

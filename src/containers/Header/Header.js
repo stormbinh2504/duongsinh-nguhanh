@@ -70,14 +70,13 @@ const Header = () => {
                             {/*    logo*/}
                             {/*</div>*/}
                             <div className="container-menu-header__mobile-logo-menu" onClick={() => setShowMenuMobile(!showMenuMobile)}>
-                                <div>
+                                <div style={{fontSize: 24, color: "#fff"}}>
                                     {/*    icon 3 gach*/}
                                     <i className="fa fa-bars" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            {
-                            showMenuMobile ?
-                                <div className="menu-content-mobile">
+
+                                <div className="menu-content-mobile" style={showMenuMobile ? {transform: "translateX(0%)"} : {transform: "translateX(100%)"}}>
                                     <div>
                                         <div className="menu-content-mobile-top">
                                             <div className="landing-header__menu-item">
@@ -88,7 +87,9 @@ const Header = () => {
                                             <div className="landing-header__menu-mobile-logo-menu"
                                                  onClick={() => setShowMenuMobile(!showMenuMobile)}>
                                                 {/*    icon close*/}
-                                                <i className="fa fa-times" aria-hidden="true"></i>
+                                                <span style={{fontSize: 24, color: "#1A1A1A"}}>
+                                                    <i className="fa fa-times" aria-hidden="true"></i>
+                                                </span>
                                             </div>
                                         </div>
                                         <div className="menu-content-mobile-body">
@@ -117,8 +118,8 @@ const Header = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div> : null
-                        }
+                                </div>
+
                         </div>
                     </div>
                     <div className="container-right">

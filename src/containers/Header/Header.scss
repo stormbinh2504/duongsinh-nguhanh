@@ -50,11 +50,14 @@
             .container-menu-header__mobile{
                 display: none;
             }
+            //.menu-content-mobile{
+            //
+            //}
         }
 
         .container-right {
             .btn-header {
-                border-radius: $border-radius;
+                border-radius: $border_radius;
                 padding      : 5px 20px;
                 background   : $primary_1;
                 font-weight  : 500;
@@ -89,6 +92,7 @@
         justify-content: space-between;
         .container-logo .img-logo{
             width: 48px;
+            max-width: max-content;
         }
         .container-menu-header{
             display: none;
@@ -106,20 +110,18 @@
             background: #ffffff;
             left: 0;
             top: 0;
-            //transform: translateX(100%);
-            //transition: 0.5s ease;
-
+            //transform: translateX(0%);
+            transition: 0.5s ease;
             .menu-content-mobile-top {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 width: 100%;
-                height: 90px;
-                padding: 16px 24px;
+                height: 80px;
+                padding: 16px 15px;
 
                 .landing-header__menu-mobile-logo-menu {
                     cursor: pointer;
-                    padding-right: 12px;
                 }
             }
 
