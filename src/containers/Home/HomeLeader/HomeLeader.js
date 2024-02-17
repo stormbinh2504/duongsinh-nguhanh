@@ -69,7 +69,7 @@ const HomeLeader = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
-        autoplay: false, // Enable autoplay
+        autoplay: true, // Enable autoplay
         autoplaySpeed: 2000, // Set the autoplay speed in milliseconds
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
