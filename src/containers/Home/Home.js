@@ -11,6 +11,7 @@ import HomeBranch from './HomeBranch/HomeBranch';
 import HomeService from './HomeService/HomeService';
 import HomeAboutUs from './HomeAboutUs/HomeAboutUs';
 import HomeLeader from './HomeLeader/HomeLeader';
+import HomeContact from './HomeContact/HomeContact';
 
 const src1 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_1.jpg?v=1455"
 const src2 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
@@ -45,6 +46,7 @@ const Home = () => {
                     <HomeService />
                     <HomeLeader />
                     <HomeAboutUs />
+                    <HomeContact />
                 </div>
             </section>
         </div>
