@@ -15,11 +15,11 @@ const Home = () => {
     const reveal = () => {
         let reveals = document.getElementById('home-counter');
         var windowHeight = window.innerHeight;
-        var elementTop = reveals.getBoundingClientRect().top;
+        // var elementTop = reveals.getBoundingClientRect().top;
         var elementVisible = 150;
-        if (elementTop < windowHeight - elementVisible) {
-            LoadAnimateCounterNumber()
-        }
+        // if (elementTop < windowHeight - elementVisible) {
+        //     LoadAnimateCounterNumber()
+        // }
     }
 
     useEffect(() => {
