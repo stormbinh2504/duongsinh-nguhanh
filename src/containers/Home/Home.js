@@ -5,9 +5,6 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import "./Home.scss"
 import { AnimateCounterNumber } from '../../utils';
 import { useEffect } from 'react';
-import HomeStep from './HomeStep/HomeStep';
-import HomeBanner from './HomeBanner/HomeBanner';
-import OurCustomer from './OurCustomer/OurCustomer';
 
 const src1 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_1.jpg?v=1455"
 const src2 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
@@ -127,9 +124,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <HomeStep />
-                    <HomeBanner />
-                    <OurCustomer />
                 </div>
             </section>
         </div>

@@ -1,16 +1,9 @@
 import React from 'react'
-import { Link, useHistory } from 'react-router-dom'
-import { useSelector, useDispatch } from "react-redux";
-import * as actions from '../../redux/actions'
-import { TYPE_USER } from '../../utils';
 import "./Footer.scss"
 
 
 // let phone = 
 const Footer = () => {
-    const history = useHistory()
-    const dispatch = useDispatch()
-
     return (
         <div className='footer'>
             <div className="container">
