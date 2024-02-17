@@ -1,0 +1,57 @@
+@import "../../../styles/common";
+
+
+.home-introduce {
+    background-image: url("../../../assets/images/home/home_introduce.png");
+
+    .home-body-introduce {
+
+        .target-content {
+            display        : flex;
+            gap            : 32px;
+            justify-content: space-between;
+
+            .target-item {
+                max-width : 20%;
+                padding   : 0 8px;
+                text-align: center;
+                position  : relative;
+
+                .target-image {}
+
+                .target-title {
+                    color      : #111827;
+                    font-weight: 500;
+                    font-size  : 18px;
+                    line-height: 24px;
+                    margin     : 8px 0px;
+                }
+
+                .target-desc {
+                    font-weight: 400;
+                    font-size  : 14px;
+                    line-height: 20px;
+                    color      : #4B5563;
+                }
+            }
+        }
+    }
+}
+
+
+// từ 767px trở xuống
+@include media-breakpoint-down(sm) {
+    .home-introduce {
+
+        .home-body-introduce {
+            .target-content {
+                flex-direction: column;
+
+                .target-item {
+                    width    : 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import "../../../styles/common";
+
+.home-header-box {
+    .logo-box {}
+
+    .content-box {
+        .wrap-content-box {
+            margin: 25px 0px 20px 0px;
+
+            .title-box {
+                font-weight: 500;
+                font-size  : 36px;
+                line-height: 40px;
+            }
+
+            .description-box {
+                font-weight: 400;
+                font-size  : 16px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .extra-box {}
+
+
+    &.home-header-box-1 {
+        .content-box {
+            .wrap-content-box {
+
+                .title-box {
+                    color: $primary_2;
+                }
+
+                .description-box {
+                    color: $primary_2;
+                }
+            }
+        }
+    }
+}

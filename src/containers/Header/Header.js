@@ -58,6 +58,7 @@ const Header = () => {
                             <ul className="list-menu-header item-center">
                                 <li className="item-menu-header"><a href="#home">GIỚI THIỆU KOL</a></li>
                                 <li className="item-menu-header"><a href="#about">CHI NHÁNH TOÀN QUỐC</a></li>
+                                <li className="item-menu-header"><a href="#about">ĐÀO TẠO ĐẠI LÝ</a></li>
                                 <li className="item-menu-header"><a href="#family">LEADER ĐẠI LÝ THÀNH CÔNG</a></li>
                                 <li className="item-menu-header"><a href="#gallery">PHẢN HỒI KHÁCH HÀNG</a></li>
                             </ul>

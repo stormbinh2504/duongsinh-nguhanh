@@ -12,6 +12,8 @@
         width                      : 100%;
         box-shadow                 : 0 0 10px rgba(9, 9, 9, 0.1);
         -webkit-backface-visibility: hidden;
+        animation                  : stuckMoveDown .6s;
+        margin                     : 0 auto;
     }
 
     .container-header {
@@ -60,6 +62,16 @@
     }
 }
 
+
+@keyframes stuckMoveDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 // từ 575.98px trở xuống
 @include media-breakpoint-down(xs) {}
