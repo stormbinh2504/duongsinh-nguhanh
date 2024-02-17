@@ -11,13 +11,14 @@ import HomeBranch from './HomeBranch/HomeBranch';
 import HomeService from './HomeService/HomeService';
 import HomeAboutUs from './HomeAboutUs/HomeAboutUs';
 import HomeLeader from './HomeLeader/HomeLeader';
+import HomeContact from './HomeContact/HomeContact';
 
 const src1 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_1.jpg?v=1455"
 const src2 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
 const src3 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
 const Home = () => {
     return (
-        <div id="container-home" className='container-home' style={{ marginTop: "40px" }}>
+        <div id="container-home" className='container-home'>
             <div className="slider">
                 <OwlCarousel items={1}
                     className="owl-theme"
@@ -44,6 +45,7 @@ const Home = () => {
                     <HomeService />
                     <HomeLeader />
                     <HomeAboutUs />
+                    <HomeContact />
                 </div>
             </section>
         </div>

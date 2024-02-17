@@ -1,118 +1,53 @@
 @import "../../styles/common";
 
 .footer {
-    background-color: #333;
-    color           : #CCC;
-    border-top-color: rgba(0, 0, 0, 0.2);
+    background-image: url("../../assets/images/company/bg_footer.png");
+    color           : $white;
 
-    .footer-widgets-wrap {
-        position: relative;
-        padding : 30px 0 0 0;
+    .footer-wrap {
+        height: 400px;
 
-        .column-1 {
-            h4 {
-                color      : #EEE;
-                font-weight: 600;
-                font-size  : 18px;
-                line-height: 1.5;
-                margin     : 0 0 20px 0;
-            }
+        .footer-wrap-content {
+            display        : flex;
+            justify-content: space-between;
+            height         : 100%;
 
-            p {
-                margin: 0 0 10px 0px;
-            }
-
-            h5 {
-                margin     : 20px 0 5px;
-                color      : #EEE;
-                font-weight: bold;
-                font-size  : 14px;
-                line-height: 1.5;
-            }
-        }
-
-        .column-2,
-        .column-3 {
-            h4 {
-                margin-bottom : 25px;
-                font-size     : 15px;
-                font-weight   : 600;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                color         : #DDD;
-            }
-
-            ul {
-                li {
-                    padding: 4px;
-
-                    a {
-                        font-weight: bold;
-
-                        i {
-                            padding-right: 5px;
+            .column-1 {
+                .block {
+                    .box-company-desc {
+                        .company-name {
+                            font-weight: 500;
+                            font-size  : 20px;
+                            line-height: 28px;
+                            margin     : 24px 0px 12px 0px;
                         }
 
-                        &:hover {
-                            color: #AAA;
-                        }
-                    }
-                }
-            }
-        }
-
-        .column-3 {
-            .footer-social {
-                display: flex;
-                margin : 20px 0;
-                gap    : 10px;
-
-                .item {
-                    display    : flex;
-                    align-items: center;
-
-                    .icon {
-                        a {
-                            color: #CCC;
-
-                            img {
-                                width        : 32px;
-                                border-radius: 3px;
-                                border       : none;
-                                max-width    : 100%;
-                            }
+                        .company-desc {
+                            font-weight: 400;
+                            font-size  : 16px;
+                            line-height: 24px;
                         }
                     }
                 }
             }
 
-        }
+            .column-2 {
+                .block {
+                    display       : flex;
+                    flex-direction: column;
+                    gap           : 20px;
+                    font-weight   : 400;
+                    font-size     : 16px;
+                    line-height   : 24px;
 
-        .contact_prefooter {
-            .icon-pre-footer {
-                font-size: 40px;
-
-                i {
-                    color: #CCC;
+                    .highlight {
+                        color      : $primary_1;
+                        font-weight: 600;
+                        font-size  : 20px;
+                        line-height: 28px;
+                    }
                 }
             }
-
-            h4 {
-                line-height: 1.5;
-                margin     : 0 0 20px 0;
-                font-size  : 18px;
-                font-weight: 600;
-                color      : #EEE;
-            }
         }
-    }
-
-    .copyrights {
-        background-color: rgba(0, 0, 0, 0.2);
-        color           : rgba(255, 255, 255, 0.25);
-        text-shadow     : 1px 1px 1px rgba(0, 0, 0, 0.1);
-        padding         : 20px 0;
-        font-size       : 14px;
-        line-height     : 1.8;
     }
 }

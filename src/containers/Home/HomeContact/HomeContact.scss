@@ -1,0 +1,108 @@
+@import "../../../styles/common";
+
+
+.home-contact {
+    background-image: url("../../../assets/images/home/home_contact.png");
+
+    .home-body-contact {
+        .contact-content {
+            background   : $white;
+            border-radius: 20px;
+
+            .wrap-contact-content {
+                padding: 20px;
+                display: flex;
+                gap    : 52px;
+
+                .content-left {
+                    .block-img {
+                        height: 100%;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .content-right {
+                    width: 50%;
+
+                    .wrap-content-right {
+                        width         : 100%;
+                        display       : flex;
+                        flex-direction: column;
+                        gap           : 24px;
+
+                        .title {
+                            font-weight: 500;
+                            font-size  : 18px;
+                            line-height: 24px;
+                            color      : $black;
+                        }
+
+                        .input-info {
+                            display       : flex;
+                            flex-direction: column;
+                            gap           : 16px;
+
+                            .group-input {
+                                width: 100%;
+
+                                .form-input {
+                                    width        : 100%;
+                                    height       : 38px;
+                                    font-weight  : 400;
+                                    font-size    : 14px;
+                                    line-height  : 20px;
+                                    border       : 1px solid #D1D5DB;
+                                    color        : #6B7280;
+                                    padding      : 6px 15px;
+                                    border-radius: $border_radius;
+                                }
+
+                                textarea.form-input {
+                                    height: 114px;
+                                }
+                            }
+
+                            .btn-send {
+                                background : $primary_3;
+                                color      : $white;
+                                font-weight: 400;
+                                font-size  : 14px;
+                                line-height: 20px;
+                                height     : 38px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// từ 767px trở xuống
+@include media-breakpoint-down(md) {
+    .home-contact {
+        .home-body-contact {
+            .contact-content {
+                background   : $white;
+                border-radius: 20px;
+
+                .wrap-contact-content {
+                    flex-direction: column;
+                    gap           : 20px;
+
+                    .content-left {}
+
+                    .content-right {
+                        width: 100%;
+
+                        .wrap-content-right {}
+                    }
+                }
+            }
+        }
+    }
+}
