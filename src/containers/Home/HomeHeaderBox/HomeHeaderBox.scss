@@ -49,7 +49,22 @@
                 }
 
                 .description-box {
-                    color: #FFFFFF;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.home-header-box-3 {
+        .content-box {
+            .wrap-content-box {
+
+                .title-box {
+                    color: $white;
+                }
+
+                .description-box {
+                    color: $white;
                 }
             }
         }
