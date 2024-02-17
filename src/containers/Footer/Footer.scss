@@ -5,12 +5,13 @@
     color           : $white;
 
     .footer-wrap {
-        height: 400px;
+        padding: 60px 0px;
 
         .footer-wrap-content {
             display        : flex;
             justify-content: space-between;
             height         : 100%;
+            gap            : 20px;
 
             .column-1 {
                 .block {
@@ -20,6 +21,7 @@
                             font-size  : 20px;
                             line-height: 28px;
                             margin     : 24px 0px 12px 0px;
+                            text-align : center;
                         }
 
                         .company-desc {
@@ -47,6 +49,18 @@
                         line-height: 28px;
                     }
                 }
+            }
+        }
+    }
+}
+
+
+// từ 767px trở xuống
+@include media-breakpoint-down(sm) {
+    .footer {
+        .footer-wrap {
+            .footer-wrap-content {
+                flex-direction: column;
             }
         }
     }
