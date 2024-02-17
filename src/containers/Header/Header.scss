@@ -27,7 +27,9 @@
         .container-left {
             display: flex;
 
-            .container-logo {}
+            .container-logo {
+                cursor: pointer;
+            }
 
             .container-menu-header {
                 .list-menu-header {
@@ -35,6 +37,7 @@
                     height : 100%;
 
                     .item-menu-header {
+                        cursor: pointer;
                         color  : $white;
                         padding: 14px 16px;
 
@@ -112,6 +115,7 @@
             top: 0;
             //transform: translateX(0%);
             transition: 0.5s ease;
+            z-index: 10000;
             .menu-content-mobile-top {
                 display: flex;
                 align-items: center;

@@ -40,14 +40,16 @@
                         display: flex;
 
                         .leader-item {
-                            border       : 2px solid transparent;
-                            border-radius: 13px;
+                            border       : 3px solid transparent;
+                            border-radius: 15px;
                             background   :
-                                linear-gradient(to right, white, white),
-                                linear-gradient(to right, #A07220, #D9D9D9);
+                                linear-gradient(to left top, white , white ),
+                                linear-gradient(to right bottom ,#A07220, #C29849, #E3B64F, #ECDEC2);
+                                //linear-gradient(to right,#ECDEC2, #E3B64F, #C29849, #A07220);
+                            //background: linear-gradient(to right,  #FFFFFF 0%, #FFFFFF 10%, #A07220 100%,#D9D9D9 100%, #DBDBDB 30%, #FFFFFF 50%), linear-gradient(to right, #A07220, #D9D9D9);
+
                             background-clip  : padding-box, border-box;
                             background-origin: padding-box, border-box;
-
                             .wrap-leader-item {
                                 .leader-image {
                                     height  : 100%;

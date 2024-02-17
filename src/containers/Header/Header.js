@@ -10,14 +10,14 @@ const Header = () => {
 
     const [isOpenMenu, setIsOpenMenu] = useState(false)
     const onRedirectHome = () => {
-        history.push("/");
+        window.location.href = '#'
     }
 
     const onScrollStickyHeader = () => {
         let header = document.getElementById("header");
         let containerHome = document.getElementById("container-home");
         let sticky = containerHome.offsetTop;
-        console.log("binh_check_scroll", window.pageYOffset, sticky)
+        // console.log("binh_check_scroll", window.pageYOffset, sticky)
         if (window.pageYOffset > sticky) {
             header.classList.add("sticky-header")
         } else {
@@ -46,7 +46,15 @@ const Header = () => {
     }
 
     const [showMenuMobile, setShowMenuMobile] = useState(false);
-
+    const scrollTo = (id) => {
+        const item = document.getElementById(id)
+        const pos = item.offsetTop
+        const headerDiv = document.querySelector(".container-header")
+        const headerHeight = headerDiv ? headerDiv.offsetHeight : 0
+        const offsetTop = pos - headerHeight
+        const offset = offsetTop > 0 ? offsetTop : 0
+        window.scrollTo(0, offset)
+    }
     return (
         <div id="header" className='header'>
             <div className="container">
@@ -57,11 +65,11 @@ const Header = () => {
                         </div>
                         <div className="container-menu-header">
                             <ul className="list-menu-header item-center">
-                                <li className="item-menu-header"><a href="#home">GIỚI THIỆU KOL</a></li>
-                                <li className="item-menu-header"><a href="#about">CHI NHÁNH TOÀN QUỐC</a></li>
-                                <li className="item-menu-header"><a href="#about">ĐÀO TẠO ĐẠI LÝ</a></li>
-                                <li className="item-menu-header"><a href="#family">LEADER ĐẠI LÝ THÀNH CÔNG</a></li>
-                                <li className="item-menu-header"><a href="#gallery">PHẢN HỒI KHÁCH HÀNG</a></li>
+                                <li className="item-menu-header"><a  onClick={() => scrollTo('home-introduce')}>GIỚI THIỆU KOL</a></li>
+                                <li className="item-menu-header"><a  onClick={() => scrollTo('home-branch')}>CHI NHÁNH TOÀN QUỐC</a></li>
+                                <li className="item-menu-header"><a  onClick={() => scrollTo('home-service')}>ĐÀO TẠO ĐẠI LÝ</a></li>
+                                <li className="item-menu-header"><a  onClick={() => scrollTo('home-leader')}>LEADER ĐẠI LÝ THÀNH CÔNG</a></li>
+                                <li className="item-menu-header"><a  onClick={() => scrollTo('home-about-us')}>PHẢN HỒI KHÁCH HÀNG</a></li>
                             </ul>
                         </div>
                         <div className="container-menu-header__mobile">
@@ -76,7 +84,7 @@ const Header = () => {
                                 </div>
                             </div>
 
-                                <div className="menu-content-mobile" style={showMenuMobile ? {transform: "translateX(0%)"} : {transform: "translateX(100%)"}}>
+                                <div className="menu-content-mobile" style={showMenuMobile ? {transform: "translateX(0%)"} : {transform: "translateX(-100%)"}}>
                                     <div>
                                         <div className="menu-content-mobile-top">
                                             <div className="landing-header__menu-item">
@@ -94,22 +102,42 @@ const Header = () => {
                                         </div>
                                         <div className="menu-content-mobile-body">
                                             <div className="menu-item-mb">
-                                                <a href="#" onClick={() => setShowMenuMobile(!showMenuMobile)}>
+                                                <a href="#" onClick={() => {
+                                                    setShowMenuMobile(!showMenuMobile);
+                                                    scrollTo('home-introduce')
+                                                }}>
                                                     <div>GIỚI THIỆU KOL</div>
                                                 </a>
                                             </div>
                                             <div className="menu-item-mb">
-                                                <a href="#" onClick={() => setShowMenuMobile(!showMenuMobile)}>
+                                                <a href="#" onClick={() => {
+                                                    setShowMenuMobile(!showMenuMobile);
+                                                    scrollTo('home-branch')
+                                                }}>
+                                                    <div>CHI NHÁNH TOÀN QUỐC</div>
+                                                </a>
+                                            </div>
+                                            <div className="menu-item-mb">
+                                                <a href="#" onClick={() => {
+                                                    setShowMenuMobile(!showMenuMobile);
+                                                    scrollTo('home-service')
+                                                }}>
                                                     <div>ĐÀO TẠO ĐẠI LÝ</div>
                                                 </a>
                                             </div>
                                             <div className="menu-item-mb">
-                                                <a href="#" onClick={() => setShowMenuMobile(!showMenuMobile)}>
+                                                <a href="#" onClick={() => {
+                                                    setShowMenuMobile(!showMenuMobile);
+                                                    scrollTo('home-leader')
+                                                }}>
                                                     <div>LEADER ĐẠI LÝ THÀNH CÔNG</div>
                                                 </a>
                                             </div>
                                             <div className="menu-item-mb">
-                                                <a href="#" onClick={() => setShowMenuMobile(!showMenuMobile)}>
+                                                <a href="#" onClick={() => {
+                                                    setShowMenuMobile(!showMenuMobile);
+                                                    scrollTo('home-about-us')
+                                                }}>
                                                     <div>PHẢN HỒI KHÁCH HÀNG</div>
                                                 </a>
                                             </div>

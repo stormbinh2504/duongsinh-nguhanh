@@ -44,7 +44,7 @@ const HomeIntroduce = () => {
                 <HomeHeaderBox
                     typeBox={1}
                     titleBox="GIỚI THIỆU"
-                    desBox="Thế kỷ 21: Sức khỏe và sắc đẹp là chìa khóa thành công. Trải qua cuộc sống với phương trâm thêm và bớt dịch vụ. Độc đáo với 40-60 dịch vụ chăm sóc sức khỏe toàn diện từ máy, kem, đến tinh dầu. Từ tăng cân đến giảm cân, giải quyết mọi vấn đề về thể chất và tinh thầN"
+                    desBox="Thế kỷ 21: Sức khỏe và sắc đẹp là chìa khóa thành công. Trải qua cuộc sống với phương trâm thêm và bớt dịch vụ. Độc đáo với 40-60 dịch vụ chăm sóc sức khỏe toàn diện từ máy, kem, đến tinh dầu. Từ tăng cân đến giảm cân, giải quyết mọi vấn đề về thể chất và tinh thần"
                     urlLogo={Logo1}
                     urlExtra={Extra1}
                 />

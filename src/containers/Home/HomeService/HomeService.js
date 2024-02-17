@@ -51,7 +51,7 @@ const listService = [
     "45. Đánh hạch vùng ngực",
     "46. Viêm nang lông",
     "47. Rạn vùng bụng",
-    "48. Chăm soc mắt 3 Y",
+    "48. Chăm sóc mắt 3 Y",
     "49. Chăm sóc phổi phế"
 ]
 const HomeService = () => {
