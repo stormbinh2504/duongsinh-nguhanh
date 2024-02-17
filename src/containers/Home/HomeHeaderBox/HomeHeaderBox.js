@@ -25,9 +25,9 @@ const HomeHeaderBox = ({ typeBox, titleBox, desBox, urlLogo, urlExtra }) => {
                     </div>
                 </div>
             </div>
-            <div className="extra-box item-center">
+            {urlExtra && <div className="extra-box item-center">
                 <img className="img-extra-box item-center" src={urlExtra} />
-            </div>
+            </div>}
         </div>
     )
 }

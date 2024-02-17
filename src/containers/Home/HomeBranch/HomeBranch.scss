@@ -7,9 +7,9 @@
     .home-body-branch {
 
         .map-content {
-            display        : flex;
-            gap            : 32px;
-            justify-content: space-between;
+            img {
+                width: 100%;
+            }
         }
     }
 }

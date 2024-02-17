@@ -8,6 +8,9 @@ import { useEffect } from 'react';
 import HomeIntroduce from './HomeIntroduce/HomeIntroduce';
 import HomeStaff from './HomeStaff/HomeStaff';
 import HomeBranch from './HomeBranch/HomeBranch';
+import HomeService from './HomeService/HomeService';
+import HomeAboutUs from './HomeAboutUs/HomeAboutUs';
+import HomeLeader from './HomeLeader/HomeLeader';
 
 const src1 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_1.jpg?v=1455"
 const src2 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
@@ -38,9 +41,9 @@ const Home = () => {
                     <HomeIntroduce />
                     <HomeStaff />
                     <HomeBranch />
-                    <HomeIntroduce />
-                    <HomeIntroduce />
-                    <HomeIntroduce />
+                    <HomeService />
+                    <HomeLeader />
+                    <HomeAboutUs />
                 </div>
             </section>
         </div>
