@@ -42,7 +42,7 @@ const Home = () => {
     }
 
     return (
-        <div className='container-home'>
+        <div id="container-home" className='container-home' style={{ marginTop: "40px" }}>
             <div className="slider">
                 <OwlCarousel items={1}
                     className="owl-theme"
