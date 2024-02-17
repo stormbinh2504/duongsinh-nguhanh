@@ -41,7 +41,13 @@ const HomeIntroduce = () => {
     return (
         <div id="home-introduce" className="home-box home-introduce">
             <div className="container">
-                <HomeHeaderBox typeBox={1} urlLogo={Logo1} urlExtra={Extra1} />
+                <HomeHeaderBox
+                    typeBox={2}
+                    titleBox="GIỚI THIỆU"
+                    desBox="Thế kỷ 21: Sức khỏe và sắc đẹp là chìa khóa thành công. Trải qua cuộc sống với phương trâm thêm và bớt dịch vụ. Độc đáo với 40-60 dịch vụ chăm sóc sức khỏe toàn diện từ máy, kem, đến tinh dầu. Từ tăng cân đến giảm cân, giải quyết mọi vấn đề về thể chất và tinh thầN"
+                    urlLogo={Logo1}
+                    urlExtra={Extra1}
+                />
                 <div className={"home-body-box home-body-introduce"}>
                     <div className="row gutters-0">
                         <div className="col-12">

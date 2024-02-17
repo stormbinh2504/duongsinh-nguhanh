@@ -1,0 +1,24 @@
+@import "../../../styles/common";
+
+
+.home-branch {
+    background-image: url("../../../assets/images/home/home_branch.png");
+
+    .home-body-branch {
+
+        .map-content {
+            display        : flex;
+            gap            : 32px;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+// từ 767px trở xuống
+@include media-breakpoint-down(sm) {
+    .home-branch {
+
+        .home-body-branch {}
+    }
+}

@@ -8,6 +8,8 @@ import Header from './containers/Header/Header';
 import Home from './containers/Home/Home';
 import Footer from './containers/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import "../node_modules/slick-carousel/slick/slick.css";
+import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 function App() {
   const scrollTopAnimated = () => {

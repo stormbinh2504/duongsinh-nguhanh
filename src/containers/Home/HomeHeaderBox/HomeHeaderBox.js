@@ -5,7 +5,7 @@ import Logo2 from "../../../assets/images/home/box_logo_2.png"
 import Extra2 from "../../../assets/images/home/box_extra_2.png"
 import Logo3 from "../../../assets/images/home/box_logo_3.png"
 
-const HomeHeaderBox = ({ typeBox, urlLogo, urlExtra }) => {
+const HomeHeaderBox = ({ typeBox, titleBox, desBox, urlLogo, urlExtra }) => {
     let addClassNamePar = ""
     if (typeBox) {
         addClassNamePar = "home-header-box-" + typeBox
@@ -18,10 +18,10 @@ const HomeHeaderBox = ({ typeBox, urlLogo, urlExtra }) => {
             <div className="content-box item-center">
                 <div className="wrap-content-box">
                     <div className="title-box text-center">
-                        GIỚI THIỆU
+                        {titleBox}
                     </div>
                     <div className="description-box text-center">
-                        Thế kỷ 21: Sức khỏe và sắc đẹp là chìa khóa thành công. Trải qua cuộc sống với phương trâm thêm và bớt dịch vụ. Độc đáo với 40-60 dịch vụ chăm sóc sức khỏe toàn diện từ máy, kem, đến tinh dầu. Từ tăng cân đến giảm cân, giải quyết mọi vấn đề về thể chất và tinh thầN
+                        {desBox}
                     </div>
                 </div>
             </div>

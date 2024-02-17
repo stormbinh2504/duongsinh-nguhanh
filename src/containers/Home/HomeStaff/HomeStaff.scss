@@ -1,0 +1,101 @@
+@import "../../../styles/common";
+
+
+.home-staff {
+    background-image: url("../../../assets/images/home/home_staff.png");
+
+    .home-body-staff {
+        padding: 0px 0px 60px 0px !important;
+
+        .service-content {
+
+            .service-item {
+                text-align: center;
+                position  : relative;
+
+                .service-image {}
+            }
+
+            .slick-slider {
+
+                .slick-prev,
+                .slick-next {
+                    width  : unset;
+                    height : unset;
+                    z-index: 100;
+
+                    img {
+                        max-width: unset;
+                    }
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                .slick-prev {
+                    left: 0;
+                }
+
+                .slick-next {
+                    right: 0;
+                }
+
+                .slick-list {
+                    .slick-track {
+                        .service-item {
+                            cursor: pointer;
+
+                            .service-image {
+                                height: 100%;
+                                width : 100%;
+
+                                img {
+                                    width        : 100%;
+                                    height       : 100%;
+                                    border-radius: $border_radius;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .slick-dots {
+                    li {
+                        button {
+                            &::before {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+
+                    .slick-active {
+                        button {
+                            &::before {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// từ 767px trở xuống
+@include media-breakpoint-down(sm) {
+    .home-staff {
+
+        .home-body-staff {
+            .service-content {
+                flex-direction: column;
+
+                .service-item {
+                    width    : 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
