@@ -14,6 +14,8 @@
             background-image   : url("../../../assets/images/home/home_service/home_service_bg.png");
             background-position: center;
             background-repeat  : no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
             border-radius      : 15px;
 
             .wrap-service-content {
@@ -34,6 +36,7 @@
                         /* Adjust width as needed */
                         /* You can add additional styling for each item here */
                     }
+
                 }
             }
         }
@@ -53,7 +56,9 @@
                     flex-direction: column;
 
                     .list-item-service {
-                        .item-service {}
+                        .item-service {
+                            font-size: 24px;
+                        }
                     }
                 }
             }

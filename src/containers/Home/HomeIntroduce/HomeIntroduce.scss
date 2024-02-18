@@ -3,6 +3,8 @@
 
 .home-introduce {
     background-image: url("../../../assets/images/home/home_introduce.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .home-body-introduce {
 
@@ -21,8 +23,8 @@
 
                 .target-title {
                     color      : #111827;
-                    font-weight: 500;
-                    font-size  : 18px;
+                    font-weight: 600;
+                    font-size  : 16px;
                     line-height: 24px;
                     margin     : 8px 0px;
                 }
