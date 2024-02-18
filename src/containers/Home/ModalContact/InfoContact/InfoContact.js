@@ -22,10 +22,10 @@ const InfoContact = ({ isOpen, toogle }) => {
                                 <input type="text" className="form-input" id="name" name="name" placeholder="Nhập tên" required="" data-error="Please enter your name" />
                             </div>
                             <div className="group-input">
-                                <input type="text" className="form-input" id="name" name="name" placeholder="Số điện thoại" required="" data-error="Please enter your name" />
+                                <input type="text" className="form-input" id="phone" name="phone" placeholder="Số điện thoại" required="" data-error="Please enter your name" />
                             </div>
                             <div className="group-input">
-                                <input type="text" className="form-input" id="name" name="name" placeholder="Email" required="" data-error="Please enter your name" />
+                                <input type="text" className="form-input" id="email" name="email" placeholder="Email" required="" data-error="Please enter your name" />
                             </div>
                             <div className="group-input">
                                 <textarea className="form-input" id="message" placeholder="Tin nhắn"

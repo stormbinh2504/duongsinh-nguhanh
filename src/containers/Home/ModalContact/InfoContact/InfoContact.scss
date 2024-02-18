@@ -55,6 +55,11 @@
                             color        : #6B7280;
                             padding      : 6px 15px;
                             border-radius: $border_radius;
+
+                            &:focus {
+                                outline   : 0;
+                                box-shadow: 0 0 0 0.2rem #b0c8a6;
+                            }
                         }
 
                         textarea.form-input {
