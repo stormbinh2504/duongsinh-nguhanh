@@ -147,4 +147,14 @@
             }
         }
     }
+
+    .slick-slider {
+        .slick-prev {
+            left: -10px !important;
+        }
+
+        .slick-next {
+            right: -10px !important;
+        }
+    }
 }

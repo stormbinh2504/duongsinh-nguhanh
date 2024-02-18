@@ -102,7 +102,7 @@ const Header = () => {
                                         </div>
                                         <div className="menu-content-mobile-body">
                                             <div className="menu-item-mb">
-                                                <a href="#" onClick={() => {
+                                                <a onClick={() => {
                                                     setShowMenuMobile(!showMenuMobile);
                                                     scrollTo('home-introduce')
                                                 }}>
@@ -110,7 +110,7 @@ const Header = () => {
                                                 </a>
                                             </div>
                                             <div className="menu-item-mb">
-                                                <a href="#" onClick={() => {
+                                                <a onClick={() => {
                                                     setShowMenuMobile(!showMenuMobile);
                                                     scrollTo('home-branch')
                                                 }}>
@@ -118,7 +118,7 @@ const Header = () => {
                                                 </a>
                                             </div>
                                             <div className="menu-item-mb">
-                                                <a href="#" onClick={() => {
+                                                <a onClick={() => {
                                                     setShowMenuMobile(!showMenuMobile);
                                                     scrollTo('home-service')
                                                 }}>
@@ -126,7 +126,7 @@ const Header = () => {
                                                 </a>
                                             </div>
                                             <div className="menu-item-mb">
-                                                <a href="#" onClick={() => {
+                                                <a onClick={() => {
                                                     setShowMenuMobile(!showMenuMobile);
                                                     scrollTo('home-leader')
                                                 }}>
@@ -134,7 +134,7 @@ const Header = () => {
                                                 </a>
                                             </div>
                                             <div className="menu-item-mb">
-                                                <a href="#" onClick={() => {
+                                                <a onClick={() => {
                                                     setShowMenuMobile(!showMenuMobile);
                                                     scrollTo('home-about-us')
                                                 }}>

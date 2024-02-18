@@ -18,18 +18,36 @@ function App() {
     })
   }
 
+  let scTimer = 0
+  let scrollY = 0
+  const handleScroll = () => {
+      if (scTimer) return;
+      scTimer = setTimeout(() => {
+          scrollY = window.scrollY;
+          clearTimeout(scTimer);
+          scTimer = 0;
+      }, 100);
+  }
+
   useEffect(() => {
     scrollTopAnimated()
   }, []);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+    }, [scrollY]);
 
   return (
     <div className="App">
       {/* <ScrollToTop /> */}
       <Header />
       <Home />
-      <div id="scrollToTop" className='item-center'><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
-      <Footer />
-    </div >
+        {scrollY > 300 ?
+            <div id="scrollToTop" className='item-center'><i className="fa fa-angle-double-up" aria-hidden="true"></i>
+            </div> : null}
+        <Footer/>
+    </div>
   );
 }
 

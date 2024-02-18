@@ -1,8 +1,10 @@
 @import "../../styles/common";
 
 .footer {
-    background-image: url("../../assets/images/company/bg_footer.png");
-    color           : $white;
+    background-image : url("../../assets/images/company/bg_footer.png");
+    color            : $white;
+    background-size  : cover;
+    background-repeat: no-repeat;
 
     .footer-wrap {
         padding: 60px 0px;
