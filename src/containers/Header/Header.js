@@ -9,7 +9,7 @@ import ModalContact from '../Home/ModalContact/ModalContact';
 const Header = () => {
     const history = useHistory()
 
-    const [isOpenModal, setOpenModal] = useState(true)
+    const [isOpenModal, setOpenModal] = useState(false)
     const onRedirectHome = () => {
         window.location.href = '#'
     }
