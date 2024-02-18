@@ -11,13 +11,15 @@ import HomeLeader from './HomeLeader/HomeLeader';
 import HomeContact from './HomeContact/HomeContact';
 
 import banner_1 from "../../assets/images/home/banner/banner_1.png"
+import banner_mobile from "../../assets/images/home/banner/banner_mobile.png"
 
 const Home = () => {
 
     return (
         <div id="container-home" className='container-home'>
             <div id="home-banner" className="home-banner">
-                <img src={banner_1} />
+                <img className="banner-desktop" src={banner_1} />
+                <img className="banner-mb" src={banner_mobile} />
             </div>
             <section id="content-home" className="content-home">
                 <div className="content-wrap">
