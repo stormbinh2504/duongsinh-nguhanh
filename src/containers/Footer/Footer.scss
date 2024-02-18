@@ -55,8 +55,8 @@
 }
 
 
-// từ 767px trở xuống
-@include media-breakpoint-down(sm) {
+// từ 991px trở xuống
+@include media-breakpoint-down(md) {
     .footer {
         .footer-wrap {
             .footer-wrap-content {
