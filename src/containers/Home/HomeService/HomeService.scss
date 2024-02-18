@@ -34,6 +34,7 @@
                         /* Adjust width as needed */
                         /* You can add additional styling for each item here */
                     }
+
                 }
             }
         }
@@ -53,7 +54,9 @@
                     flex-direction: column;
 
                     .list-item-service {
-                        .item-service {}
+                        .item-service {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
