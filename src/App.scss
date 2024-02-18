@@ -80,9 +80,9 @@ button {
 
 
 .App {
-  @media (min-width: 992px) {
+  @media (min-width: 576px) {
     .container {
-      max-width: 1240px !important;
+      max-width: 540px;
     }
   }
 
@@ -93,9 +93,9 @@ button {
 
   }
 
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     .container {
-      max-width: 540px;
+      max-width: 1240px !important;
     }
   }
 }
