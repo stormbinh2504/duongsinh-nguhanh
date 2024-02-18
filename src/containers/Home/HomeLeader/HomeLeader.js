@@ -5,8 +5,11 @@ import Slider from "react-slick";
 import Logo1 from "../../../assets/images/home/box_logo_1.png"
 import Extra1 from "../../../assets/images/home/box_extra_1.png"
 
-import nextArrow from "../../../assets/images/home/home_staff/nextArrow.svg"
-import prevArrow from "../../../assets/images/home/home_staff/prevArrow.svg"
+// import nextArrow from "../../../assets/images/home/home_staff/nextArrow.svg"
+// import prevArrow from "../../../assets/images/home/home_staff/prevArrow.svg"
+
+import next from "../../../assets/images/home/home_staff/next.svg"
+import prev from "../../../assets/images/home/home_staff/prev.svg"
 import playVideoStaff from "../../../assets/images/home/home_staff/playVideoStaff.png"
 
 import home_leader_1 from "../../../assets/images/home/home_leader/home_leader_1.png"
@@ -41,9 +44,9 @@ function SampleNextArrow(props) {
         <button
             className={`btn-prev ${className}`}
             onClick={onClick}
-            aria-label={nextArrow}
+            aria-label={next}
         >
-            <img src={nextArrow} />
+            <img src={next} />
         </button>
     );
 }
@@ -54,9 +57,9 @@ function SamplePrevArrow(props) {
         <button
             className={`btn-next ${className}`}
             onClick={onClick}
-            aria-label={prevArrow}
+            aria-label={prev}
         >
-            <img src={prevArrow} />
+            <img src={prev} />
         </button>
     );
 }

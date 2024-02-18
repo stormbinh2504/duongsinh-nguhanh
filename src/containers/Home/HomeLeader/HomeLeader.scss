@@ -17,6 +17,17 @@
                     height : unset;
                     z-index: 100;
 
+                    border       : 3px solid transparent;
+                    border-radius: 9999px;
+                    background   :
+                            linear-gradient(to left top, white , white ),
+                            linear-gradient(to right bottom ,#A07220, #C29849, #E3B64F, #ECDEC2);
+
+                    background-clip  : padding-box, border-box;
+                    background-origin: padding-box, border-box;
+                    padding: 6px;
+                    filter: opacity(0.9);
+
                     img {
                         max-width: unset;
                     }

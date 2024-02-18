@@ -6,6 +6,8 @@ import Logo2 from "../../../assets/images/home/box_logo_2.png"
 import Extra2 from "../../../assets/images/home/box_extra_2.png"
 import prevArrow from "../../../assets/images/home/home_staff/prevArrow.svg"
 import nextArrow from "../../../assets/images/home/home_staff/nextArrow.svg"
+import next from "../../../assets/images/home/home_staff/next.svg"
+import prev from "../../../assets/images/home/home_staff/prev.svg"
 
 import home_staff_1 from "../../../assets/images/home/home_staff/home_staff_1.png"
 import home_staff_2 from "../../../assets/images/home/home_staff/home_staff_2.png"
@@ -23,7 +25,7 @@ function SampleNextArrow(props) {
             onClick={onClick}
             aria-label={nextArrow}
         >
-            <img src={nextArrow} />
+            <img src={next} />
         </button>
     );
 }
@@ -36,7 +38,7 @@ function SamplePrevArrow(props) {
             onClick={onClick}
             aria-label={prevArrow}
         >
-            <img src={prevArrow} />
+            <img src={prev} />
         </button>
     );
 }
