@@ -25,7 +25,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="column column-2 item-center">
+                        <div className="column column-2">
                             <div className="block">
                                 <div className="address-company">
                                     Trụ sở: Số 12/102 Ngụy Như Kon Tum, Nhân

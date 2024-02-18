@@ -13,13 +13,15 @@ import HomeAboutUs from './HomeAboutUs/HomeAboutUs';
 import HomeLeader from './HomeLeader/HomeLeader';
 import HomeContact from './HomeContact/HomeContact';
 
-const src1 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_1.jpg?v=1455"
-const src2 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
-const src3 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
+import banner_1 from "../../assets/images/home/banner/banner_1.png"
+
 const Home = () => {
 
     return (
-        <div id="container-home" className='container-home' style={{ marginTop: "40px" }}>
+        <div id="container-home" className='container-home'>
+            <div id="home-banner" className="home-banner">
+                <img src={banner_1} />
+            </div>
             {/*<div className="slider">*/}
             {/*    <OwlCarousel items={1}*/}
             {/*        className="owl-theme"*/}
