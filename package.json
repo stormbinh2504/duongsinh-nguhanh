@@ -1,5 +1,5 @@
 {
-  "name": "login-face",
+  "name": "nguhanh",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,19 +9,12 @@
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "react-image-gallery": "^1.2.11",
-    "react-owl-carousel": "^2.3.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.2",
     "reactstrap": "^9.0.2",
-    "redux": "^4.2.0",
-    "redux-state-sync": "^3.1.4",
-    "redux-thunk": "^2.4.1",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4",
-    "webpack-bundle-analyzer": "^4.7.0"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-app-rewired start",
