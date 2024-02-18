@@ -116,7 +116,7 @@ const HomeAboutUs = () => {
                                 <Slider autoplay={true} {...settings} >
                                     {listCustomer && listCustomer.length > 0 && listCustomer.map((item, index) => {
                                         return (
-                                            <div className="customer-item">
+                                            <div className="customer-item" key={index}>
                                                 <div className="wrap-customer-item">
                                                     <div className="customer-image">
                                                         <img src={item.urlImage} />

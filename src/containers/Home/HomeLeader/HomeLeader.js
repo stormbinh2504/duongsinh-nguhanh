@@ -116,7 +116,7 @@ const HomeLeader = () => {
                                 <Slider autoplay={true} {...settings} >
                                     {listLeader && listLeader.length > 0 && listLeader.map((item, index) => {
                                         return (
-                                            <div className="leader-item">
+                                            <div className="leader-item" key={index}>
                                                 <div className="wrap-leader-item">
                                                     <div className="leader-image">
                                                         <img src={item.urlImage} />

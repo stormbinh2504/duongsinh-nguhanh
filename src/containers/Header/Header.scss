@@ -60,7 +60,7 @@
             //}
         }
 
-        .container-right {
+        .container-right{
             .btn-header {
                 border-radius: $border_radius;
                 padding      : 5px 20px;
@@ -147,6 +147,20 @@
                     }
 
                     padding: 16px 0;
+                }
+
+                .menu-item-mb{
+                    .container-right-mb {
+                        .btn-header {
+                            border-radius: $border_radius;
+                            padding      : 5px 20px;
+                            background   : $primary_1;
+                            font-weight  : 500;
+                            font-size    : 16px;
+                            line-height  : 24px;
+                        }
+                    }
+
                 }
             }
         }

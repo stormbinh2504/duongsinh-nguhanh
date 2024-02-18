@@ -97,7 +97,7 @@ const HomeStaff = () => {
                                 <Slider autoplay={true} {...settings} >
                                     {listService && listService.length > 0 && listService.map((item, index) => {
                                         return (
-                                            <div className="service-item">
+                                            <div className="service-item" key={index}>
                                                 <div className="service-image">
                                                     <img src={item} />
                                                 </div>

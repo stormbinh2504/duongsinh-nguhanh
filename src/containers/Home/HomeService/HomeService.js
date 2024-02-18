@@ -73,7 +73,7 @@ const HomeService = () => {
                                         {listService.map((item, index) => {
                                             if (index < 15) {
                                                 return (
-                                                    <div className="item-service">
+                                                    <div className="item-service" key={index}>
                                                         {item}
                                                     </div>
                                                 )
@@ -84,7 +84,7 @@ const HomeService = () => {
                                         {listService.map((item, index) => {
                                             if (15 < index && index < 31) {
                                                 return (
-                                                    <div className="item-service">
+                                                    <div className="item-service" key={index}>
                                                         {item}
                                                     </div>
                                                 )
@@ -95,7 +95,7 @@ const HomeService = () => {
                                         {listService.map((item, index) => {
                                             if (index > 31) {
                                                 return (
-                                                    <div className="item-service">
+                                                    <div className="item-service" key={index}>
                                                         {item}
                                                     </div>
                                                 )

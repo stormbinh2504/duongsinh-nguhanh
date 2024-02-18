@@ -54,7 +54,7 @@ const HomeIntroduce = () => {
                             <div className="target-content">
                                 {listTarget.map((item, index) => {
                                     return (
-                                        <div className="target-item">
+                                        <div className="target-item" key={index}>
                                             <div className="target-image">
                                                 <img src={item.urlIcon} />
                                             </div>

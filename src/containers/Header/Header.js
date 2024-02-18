@@ -144,9 +144,16 @@ const Header = () => {
                                                     <div>PHẢN HỒI KHÁCH HÀNG</div>
                                                 </a>
                                             </div>
-                                            <div className="container-right">
-                                                <button className="btn-header">Liên hệ</button>
+                                            <div className="menu-item-mb">
+                                                <div className="container-right-mb">
+                                                    <button className="btn-header" onClick={() => {
+                                                        setOpenModal(!isOpenModal);
+                                                        setShowMenuMobile(!showMenuMobile)
+                                                    }}>Liên hệ
+                                                    </button>
+                                                </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -154,7 +161,10 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="container-right">
-                        <button className="btn-header" onClick={() => { setOpenModal(!isOpenModal) }}>Liên hệ</button>
+                        <button className="btn-header" onClick={() => {
+                            setOpenModal(!isOpenModal)
+                        }}>Liên hệ
+                        </button>
                     </div>
                 </div>
             </div>
