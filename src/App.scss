@@ -102,4 +102,9 @@ button {
 
 html {
   scroll-behavior: smooth;
+
+  .modal-open {
+    padding-right: unset !important;
+    overflow     : unset !important;
+  }
 }
