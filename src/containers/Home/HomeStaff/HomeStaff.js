@@ -88,7 +88,7 @@ const HomeStaff = () => {
                 <HomeHeaderBox
                     typeBox={2}
                     titleBox="PHÓ CHỦ TỊCH ĐOAN TRANG"
-                    desBox="Đoan trang phó chủ tịch thẩm mỹ dưỡng sinh ngũ hành cùng anh chị em leader cam kết đồng hành dạy nghề 100% miễn phí cho tất cả anh chị em . chỉ cần bạn chăm chỉ, kiên trì, nỗ lưc, và đủ tình yêu thương, có trách nhiệm với khách hàng. chắc chắn bạn thành công"
+                    desBox="Đoan Trang phó chủ tịch thẩm mỹ dưỡng sinh ngũ hành cùng anh chị em leader cam kết đồng hành dạy nghề 100% miễn phí cho tất cả anh chị em. Chỉ cần bạn chăm chỉ, kiên trì, nỗ lưc, và đủ tình yêu thương, có trách nhiệm với khách hàng chắc chắn bạn thành công"
                     urlLogo={Logo2}
                     urlExtra={Extra2}
                 />

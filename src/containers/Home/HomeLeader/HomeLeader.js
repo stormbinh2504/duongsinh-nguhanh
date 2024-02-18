@@ -109,7 +109,7 @@ const HomeLeader = () => {
                 <HomeHeaderBox
                     typeBox={1}
                     titleBox="CÁC LEADER ĐẠI LÝ THÀNH CÔNG"
-                    desBox="1 năm qua Trang đã giúp hơn 1000 anh chị em thành công với nggề trả hết nợ nần, mua nhà, xe.."
+                    desBox="1 năm qua Trang đã giúp hơn 1000 anh chị em thành công với nghề trả hết nợ nần, mua nhà, xe.."
                     urlLogo={Logo1}
                     urlExtra={Extra1}
                 />
