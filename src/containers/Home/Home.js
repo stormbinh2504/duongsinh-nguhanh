@@ -18,8 +18,8 @@ const Home = () => {
     return (
         <div id="container-home" className='container-home'>
             <div id="home-banner" className="home-banner">
-                <img className="banner-desktop" src={banner_1} />
-                <img className="banner-mb" src={banner_1} />
+                <img className="banner-desktop" src={banner_1} alt=""/>
+                <img className="banner-mb" src={banner_1} alt=""/>
             </div>
             <section id="content-home" className="content-home">
                 <div className="content-wrap">
