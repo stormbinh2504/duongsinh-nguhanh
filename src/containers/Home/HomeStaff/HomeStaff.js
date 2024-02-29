@@ -9,12 +9,14 @@ import nextArrow from "../../../assets/images/home/home_staff/nextArrow.svg"
 import next from "../../../assets/images/home/home_staff/next.svg"
 import prev from "../../../assets/images/home/home_staff/prev.svg"
 
-import home_staff_1 from "../../../assets/images/home/home_staff/home_staff_1.png"
-import home_staff_2 from "../../../assets/images/home/home_staff/home_staff_2.png"
-import home_staff_3 from "../../../assets/images/home/home_staff/home_staff_3.png"
+import home_staff_1 from "../../../assets/images/home/home_introduce/home_kol_intro_1.png"
+import home_staff_2 from "../../../assets/images/home/home_introduce/home_kol_intro_2.png"
+import home_staff_3 from "../../../assets/images/home/home_introduce/home_kol_intro_3.png"
+import home_staff_4 from "../../../assets/images/home/home_introduce/home_kol_intro_4.png"
+import home_staff_5 from "../../../assets/images/home/home_introduce/home_kol_intro_5.png"
 
 const listService = [
-    home_staff_1, home_staff_2, home_staff_3,
+    home_staff_1, home_staff_2, home_staff_3, home_staff_4, home_staff_5,
 ]
 
 function SampleNextArrow(props) {

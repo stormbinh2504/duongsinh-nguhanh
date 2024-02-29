@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import "./InfoContact.scss"
 import home_contact_ads from "../../../../assets/images/home/home_contact/home_contact_ads.png"
 
@@ -11,14 +11,30 @@ const InfoContact = ({ isOpen, toogle }) => {
     });
 
     const handleSubmit = () => {
-        console.log('')
+        const url = '/home/customer';
+        let formData = new FormData();
+        for (var k in formContact) {
+            formData.append(k, formContact[k]);
+        }
+
+        fetch(url, {
+            method: 'post',
+            body: formData,
+        })
+            .then((res) => res.json()).then((data) => {
+                console.log(data);
+                alert(data.message);
+                if (data.code === 'success') {
+                    window.location.href = '/';
+                }
+            });
     }
     return (
         <div className="info-contact">
             <div className="wrap-info-contact">
                 <div className="content-left">
                     <div className="block-img">
-                        <img src={home_contact_ads} alt=''/>
+                        <img src={home_contact_ads} alt='' />
                     </div>
                 </div>
                 <div className="content-right">
@@ -31,7 +47,7 @@ const InfoContact = ({ isOpen, toogle }) => {
                                 <input
                                     type="text"
                                     value={formContact.name}
-                                    onChange={(e) => setFormContact({...formContact, name: e.target.value})}
+                                    onChange={(e) => setFormContact({ ...formContact, name: e.target.value })}
                                     className="form-input" id="name"
                                     name="name"
                                     placeholder="Nhập tên"
@@ -43,7 +59,7 @@ const InfoContact = ({ isOpen, toogle }) => {
                                 <input
                                     type="text"
                                     value={formContact.phone}
-                                    onChange={(e) => setFormContact({...formContact, phone: e.target.value})}
+                                    onChange={(e) => setFormContact({ ...formContact, phone: e.target.value })}
                                     className="form-input"
                                     id="phone"
                                     name="phone"
@@ -56,7 +72,7 @@ const InfoContact = ({ isOpen, toogle }) => {
                                 <input
                                     type="email"
                                     value={formContact.email}
-                                    onChange={(e) => setFormContact({...formContact, email: e.target.value})}
+                                    onChange={(e) => setFormContact({ ...formContact, email: e.target.value })}
                                     className="form-input"
                                     id="email"
                                     name="email"
@@ -68,7 +84,7 @@ const InfoContact = ({ isOpen, toogle }) => {
                             <div className="group-input">
                                 <textarea
                                     value={formContact.message}
-                                    onChange={(e) => setFormContact({...formContact, message: e.target.value})}
+                                    onChange={(e) => setFormContact({ ...formContact, message: e.target.value })}
                                     className="form-input"
                                     id="message"
                                     placeholder="Tin nhắn"

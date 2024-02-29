@@ -34,7 +34,7 @@ const Footer = () => {
                                 <div className="phone-company">
                                     Liên Hệ: {" "}
                                     <span className="highlight">
-                                        0972.19.5555
+                                        0986.008.996
                                     </span>
                                 </div>
                                 <div className="email-company">
@@ -45,7 +45,7 @@ const Footer = () => {
                                 <div className="hotline-company">
                                     Hotline tuyển dụng: {" "}
                                     <span className="highlight">
-                                        0972.19.5555
+                                        0986.008.996
                                     </span>
                                 </div>
                             </div>

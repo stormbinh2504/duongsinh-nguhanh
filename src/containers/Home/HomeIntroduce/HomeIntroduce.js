@@ -1,7 +1,7 @@
 import React from 'react'
 import "./HomeIntroduce.scss"
 import HomeHeaderBox from '../HomeHeaderBox/HomeHeaderBox'
-import Logo1 from "../../../assets/images/home/box_logo_1.png"
+import Logo1 from "../../../assets/images/home/home_about_us/about_icon.svg"
 import Extra1 from "../../../assets/images/home/box_extra_1.png"
 import home_introduce_1 from "../../../assets/images/home/home_introduce/home_introduce_1.png"
 import home_introduce_2 from "../../../assets/images/home/home_introduce/home_introduce_2.png"
