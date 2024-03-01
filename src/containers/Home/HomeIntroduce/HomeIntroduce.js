@@ -2,12 +2,12 @@ import React from 'react'
 import "./HomeIntroduce.scss"
 import HomeHeaderBox from '../HomeHeaderBox/HomeHeaderBox'
 import Logo1 from "../../../assets/images/home/home_about_us/about_icon.svg"
-import Extra1 from "../../../assets/images/home/box_extra_1.png"
-import home_introduce_1 from "../../../assets/images/home/home_introduce/home_introduce_1.png"
-import home_introduce_2 from "../../../assets/images/home/home_introduce/home_introduce_2.png"
-import home_introduce_3 from "../../../assets/images/home/home_introduce/home_introduce_3.png"
-import home_introduce_4 from "../../../assets/images/home/home_introduce/home_introduce_4.png"
-import home_introduce_5 from "../../../assets/images/home/home_introduce/home_introduce_5.png"
+import Extra1 from "../../../assets/images/home/box_extra_1.svg"
+import home_introduce_1 from "../../../assets/images/home/home_introduce/home_introduce_1.svg"
+import home_introduce_2 from "../../../assets/images/home/home_introduce/home_introduce_2.svg"
+import home_introduce_3 from "../../../assets/images/home/home_introduce/home_introduce_3.svg"
+import home_introduce_4 from "../../../assets/images/home/home_introduce/home_introduce_4.svg"
+import home_introduce_5 from "../../../assets/images/home/home_introduce/home_introduce_5.svg"
 
 
 const listTarget = [

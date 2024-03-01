@@ -1,9 +1,7 @@
 import React from 'react'
 import "./HomeHeaderBox.scss"
 
-import Logo2 from "../../../assets/images/home/box_logo_2.png"
-import Extra2 from "../../../assets/images/home/box_extra_2.png"
-import Logo3 from "../../../assets/images/home/box_logo_3.png"
+
 
 const HomeHeaderBox = ({ typeBox, titleBox, desBox, urlLogo, urlExtra }) => {
     let addClassNamePar = ""

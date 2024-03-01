@@ -1,7 +1,7 @@
 import React from 'react'
 import "./HomeService.scss"
 import HomeHeaderBox from '../HomeHeaderBox/HomeHeaderBox'
-import Logo3 from "../../../assets/images/home/box_logo_3.png"
+import Logo3 from "../../../assets/images/home/box_logo_3.svg"
 
 const listService = [
     "1. Giảm cân tổng thế tận gốc",

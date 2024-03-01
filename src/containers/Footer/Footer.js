@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.scss"
-import logo_footer from "../../assets/images/company/logo_footer.png"
+import logo_footer from "../../assets/images/company/logo_footer.svg"
 
 
 // let phone = 

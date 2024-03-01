@@ -2,8 +2,8 @@ import React from 'react'
 import "./HomeStaff.scss"
 import HomeHeaderBox from '../HomeHeaderBox/HomeHeaderBox'
 import Slider from "react-slick";
-import Logo2 from "../../../assets/images/home/box_logo_2.png"
-import Extra2 from "../../../assets/images/home/box_extra_2.png"
+import Logo2 from "../../../assets/images/home/box_logo_2.svg"
+import Extra2 from "../../../assets/images/home/box_extra_2.svg"
 import prevArrow from "../../../assets/images/home/home_staff/prevArrow.svg"
 import nextArrow from "../../../assets/images/home/home_staff/nextArrow.svg"
 import next from "../../../assets/images/home/home_staff/next.svg"

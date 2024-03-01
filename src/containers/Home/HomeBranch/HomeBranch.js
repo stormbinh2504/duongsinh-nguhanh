@@ -1,8 +1,8 @@
 import React from 'react'
 import "./HomeBranch.scss"
 import HomeHeaderBox from '../HomeHeaderBox/HomeHeaderBox'
-import Logo1 from "../../../assets/images/home/box_logo_1.png"
-import Extra1 from "../../../assets/images/home/box_extra_1.png"
+import Logo1 from "../../../assets/images/home/home_about_us/about_icon.svg"
+import Extra1 from "../../../assets/images/home/box_extra_1.svg"
 import home_branch_map from "../../../assets/images/home/home_branch/home_branch_map.png"
 const HomeBranch = () => {
     return (
