@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Link, useHistory, withRouter } from 'react-router-dom'
 import { PATH_NAME, setPathName } from '../../utils';
 import "./Header.scss"
-import logo from "../../assets/images/company/logo.png"
+// import logo from "../../assets/images/company/logo.png"
+import logo from "../../assets/images/home/box_logo_2.svg"
 import ModalContact from '../Home/ModalContact/ModalContact';
 // let phone = 
 
@@ -81,82 +82,82 @@ const Header = () => {
                             {/*    logo*/}
                             {/*</div>*/}
                             <div className="container-menu-header__mobile-logo-menu" onClick={() => setShowMenuMobile(!showMenuMobile)}>
-                                <div style={{fontSize: 24, color: "#fff"}}>
+                                <div style={{ fontSize: 24, color: "#fff" }}>
                                     {/*    icon 3 gach*/}
                                     <i className="fa fa-bars" aria-hidden="true"></i>
                                 </div>
                             </div>
 
-                                <div className="menu-content-mobile" style={showMenuMobile ? {transform: "translateX(0%)"} : {transform: "translateX(-100%)"}}>
-                                    <div>
-                                        <div className="menu-content-mobile-top">
-                                            <div className="landing-header__menu-item">
-                                                <a href="#" onClick={() => setShowMenuMobile(!showMenuMobile)}>
-                                                    <img src={logo} alt="" width={48}/>
-                                                </a>
-                                            </div>
-                                            <div className="landing-header__menu-mobile-logo-menu"
-                                                 onClick={() => setShowMenuMobile(!showMenuMobile)}>
-                                                {/*    icon close*/}
-                                                <span style={{fontSize: 24, color: "#1A1A1A"}}>
-                                                    <i className="fa fa-times" aria-hidden="true"></i>
-                                                </span>
-                                            </div>
+                            <div className="menu-content-mobile" style={showMenuMobile ? { transform: "translateX(0%)" } : { transform: "translateX(-100%)" }}>
+                                <div>
+                                    <div className="menu-content-mobile-top">
+                                        <div className="landing-header__menu-item">
+                                            <a href="#" onClick={() => setShowMenuMobile(!showMenuMobile)}>
+                                                <img src={logo} alt="" width={48} />
+                                            </a>
                                         </div>
-                                        <div className="menu-content-mobile-body">
-                                            <div className="menu-item-mb">
-                                                <a onClick={() => {
-                                                    setShowMenuMobile(!showMenuMobile);
-                                                    scrollTo('home-introduce')
-                                                }}>
-                                                    <div>GIỚI THIỆU KOL</div>
-                                                </a>
-                                            </div>
-                                            <div className="menu-item-mb">
-                                                <a onClick={() => {
-                                                    setShowMenuMobile(!showMenuMobile);
-                                                    scrollTo('home-branch')
-                                                }}>
-                                                    <div>CHI NHÁNH TOÀN QUỐC</div>
-                                                </a>
-                                            </div>
-                                            <div className="menu-item-mb">
-                                                <a onClick={() => {
-                                                    setShowMenuMobile(!showMenuMobile);
-                                                    scrollTo('home-service')
-                                                }}>
-                                                    <div>ĐÀO TẠO ĐẠI LÝ</div>
-                                                </a>
-                                            </div>
-                                            <div className="menu-item-mb">
-                                                <a onClick={() => {
-                                                    setShowMenuMobile(!showMenuMobile);
-                                                    scrollTo('home-leader')
-                                                }}>
-                                                    <div>LEADER ĐẠI LÝ THÀNH CÔNG</div>
-                                                </a>
-                                            </div>
-                                            <div className="menu-item-mb">
-                                                <a onClick={() => {
-                                                    setShowMenuMobile(!showMenuMobile);
-                                                    scrollTo('home-about-us')
-                                                }}>
-                                                    <div>PHẢN HỒI KHÁCH HÀNG</div>
-                                                </a>
-                                            </div>
-                                            <div className="menu-item-mb">
-                                                <div className="container-right-mb">
-                                                    <button className="btn-header" onClick={() => {
-                                                        setOpenModal(!isOpenModal);
-                                                        setShowMenuMobile(!showMenuMobile)
-                                                    }}>Liên hệ
-                                                    </button>
-                                                </div>
-                                            </div>
-
+                                        <div className="landing-header__menu-mobile-logo-menu"
+                                            onClick={() => setShowMenuMobile(!showMenuMobile)}>
+                                            {/*    icon close*/}
+                                            <span style={{ fontSize: 24, color: "#1A1A1A" }}>
+                                                <i className="fa fa-times" aria-hidden="true"></i>
+                                            </span>
                                         </div>
                                     </div>
+                                    <div className="menu-content-mobile-body">
+                                        <div className="menu-item-mb">
+                                            <a onClick={() => {
+                                                setShowMenuMobile(!showMenuMobile);
+                                                scrollTo('home-introduce')
+                                            }}>
+                                                <div>GIỚI THIỆU KOL</div>
+                                            </a>
+                                        </div>
+                                        <div className="menu-item-mb">
+                                            <a onClick={() => {
+                                                setShowMenuMobile(!showMenuMobile);
+                                                scrollTo('home-branch')
+                                            }}>
+                                                <div>CHI NHÁNH TOÀN QUỐC</div>
+                                            </a>
+                                        </div>
+                                        <div className="menu-item-mb">
+                                            <a onClick={() => {
+                                                setShowMenuMobile(!showMenuMobile);
+                                                scrollTo('home-service')
+                                            }}>
+                                                <div>ĐÀO TẠO ĐẠI LÝ</div>
+                                            </a>
+                                        </div>
+                                        <div className="menu-item-mb">
+                                            <a onClick={() => {
+                                                setShowMenuMobile(!showMenuMobile);
+                                                scrollTo('home-leader')
+                                            }}>
+                                                <div>LEADER ĐẠI LÝ THÀNH CÔNG</div>
+                                            </a>
+                                        </div>
+                                        <div className="menu-item-mb">
+                                            <a onClick={() => {
+                                                setShowMenuMobile(!showMenuMobile);
+                                                scrollTo('home-about-us')
+                                            }}>
+                                                <div>PHẢN HỒI KHÁCH HÀNG</div>
+                                            </a>
+                                        </div>
+                                        <div className="menu-item-mb">
+                                            <div className="container-right-mb">
+                                                <button className="btn-header" onClick={() => {
+                                                    setOpenModal(!isOpenModal);
+                                                    setShowMenuMobile(!showMenuMobile)
+                                                }}>Liên hệ
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
+                            </div>
 
                         </div>
                     </div>
