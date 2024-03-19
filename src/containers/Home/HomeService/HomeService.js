@@ -3,6 +3,7 @@ import "./HomeService.scss"
 import HomeHeaderBox from '../HomeHeaderBox/HomeHeaderBox'
 import Logo3 from "../../../assets/images/home/box_logo_3.svg"
 
+import urlExtra from "../../../assets/images/home/box_extra_2.svg"
 const listService = [
     "1. Giảm cân tổng thế tận gốc",
     "2. Giảm mỡ bụng",
@@ -63,7 +64,9 @@ const HomeService = () => {
                     titleBox="40 - 60 DỊCH VỤ ĐÀO TẠO MIỄN PHÍ"
                     desBox="Chúng tôi cam kết đào tạo miễn phí cho các đại lý"
                     urlLogo={Logo3}
+                    urlExtra={urlExtra}
                 />
+
                 <div className={"home-body-box home-body-service"}>
                     <div className="row gutters-0">
                         <div className="col-12">

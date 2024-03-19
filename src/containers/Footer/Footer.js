@@ -39,8 +39,8 @@ const Footer = () => {
                                 </div>
                                 <div className="email-company">
                                     Email:
-                                    <p style={{ marginTop: "1rem" }}>Nguhanhgroup@gmail.com</p>
-                                    <p style={{ marginBottom: "unset" }}>Tuyendung.nguhanhgroup@gmail.com</p>
+                                    <p style={{ marginTop: "1rem" }}><strong>nguhanhgroup@gmail.com</strong></p>
+                                    <p style={{ marginBottom: "unset" }}><strong>tuyendung.nguhanhgroup@gmail.com</strong></p>
                                 </div>
                                 <div className="hotline-company">
                                     Hotline tuyển dụng: {" "}

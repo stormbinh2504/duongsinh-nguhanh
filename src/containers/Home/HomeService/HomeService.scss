@@ -6,32 +6,32 @@
 
     .container {
         max-width: 1760px !important;
-        margin   : 0 auto;
+        margin: 0 auto;
     }
 
     .home-body-service {
         .service-content {
-            background-image   : url("../../../assets/images/home/home_service/home_service_bg.png");
+            background-image: url("../../../assets/images/home/home_service/home_service_bg.png");
             background-position: center;
-            background-repeat  : no-repeat;
+            background-repeat: no-repeat;
             -webkit-background-size: cover;
             background-size: cover;
-            border-radius      : 15px;
+            border-radius: 15px;
 
             .wrap-service-content {
-                padding        : 30px;
-                display        : flex;
+                padding: 30px;
+                display: flex;
                 justify-content: space-between;
 
                 .list-item-service {
-                    display       : flex;
+                    display: flex;
                     flex-direction: column;
-                    gap           : 10px;
+                    gap: 10px;
 
                     .item-service {
-                        color      : $white;
+                        color: $white;
                         font-weight: 600;
-                        font-size  : 30px;
+                        font-size: 22px;
                         line-height: 36px;
                         /* Adjust width as needed */
                         /* You can add additional styling for each item here */
@@ -50,7 +50,7 @@
         .home-body-service {
             .service-content {
                 background-position: center;
-                background-repeat  : unset;
+                background-repeat: unset;
 
                 .wrap-service-content {
                     flex-direction: column;

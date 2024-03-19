@@ -11,6 +11,8 @@
         gap: 52px;
 
         .content-left {
+            width: 52%;
+
             .block-img {
                 height: 100%;
 
@@ -87,6 +89,10 @@
         .wrap-info-contact {
             flex-direction: column;
             gap: 20px;
+
+            .content-left {
+                width: 100%;
+            }
 
             .content-left {}
 

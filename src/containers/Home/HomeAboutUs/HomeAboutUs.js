@@ -19,20 +19,20 @@ const listCustomer = [
         urlImage: home_about_us_1,
         name: "Nam Nguyễn, 34 tuổi",
         location: "Hà Nội",
-        des: "“Tôi đã mua xe ô tô và nhà sau chỉ 3 tháng từ khi làm đại ý cho Dưỡng Sinh Ngũ Hành. Tôi thật vui khi đã và đang đóng góp một phần không nhỏ cho công ty”",
+        des: "“Tôi đã cảm thấy vô cùng hạnh phúc và hài lòng khi trải nghiệm dịch vụ ngũ hành dưỡng sinh. Đó thực sự là một trải nghiệm tuyệt vời.”",
         isVideo: true,
     },
     {
         urlImage: home_about_us_2,
         name: "Tuấn Trần, 44 tuổi",
         location: "Hà Nội",
-        des: "“Tôi đã mua xe ô tô và nhà sau chỉ 3 tháng từ khi làm đại ý cho Dưỡng Sinh Ngũ Hành. Tôi thật vui khi đã và đang đóng góp một phần không nhỏ cho công ty”",
+        des: "“Tôi cảm thấy rất tuyệt vời sau khi trải nghiệm dịch vụ ngũ hành dưỡng sinh, thực sự hài lòng với trải nghiệm của mình.”",
     },
     {
         urlImage: home_about_us_3,
         name: "Chung Đức, 22 tuổi",
         location: "Hà Nội",
-        des: "“Tôi đã mua xe ô tô và nhà sau chỉ 3 tháng từ khi làm đại ý cho Dưỡng Sinh Ngũ Hành. Tôi thật vui khi đã và đang đóng góp một phần không nhỏ cho công ty”",
+        des: "“Tôi cảm thấy vô cùng hạnh phúc và hài lòng sau khi trải nghiệm dịch vụ ngũ hành dưỡng sinh. Đó là một trải nghiệm tuyệt vời”",
     },
 ]
 
@@ -72,7 +72,7 @@ const HomeAboutUs = () => {
         slidesToScroll: 1,
         arrows: true,
         autoplay: true, // Enable autoplay
-        autoplaySpeed: 2000, // Set the autoplay speed in milliseconds
+        autoplaySpeed: 5000, // Set the autoplay speed in milliseconds
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [

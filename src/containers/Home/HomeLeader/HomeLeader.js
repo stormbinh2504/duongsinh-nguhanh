@@ -15,26 +15,61 @@ import playVideoStaff from "../../../assets/images/home/home_staff/playVideoStaf
 import home_leader_1 from "../../../assets/images/home/home_leader/home_leader_1.png"
 import home_leader_2 from "../../../assets/images/home/home_leader/home_leader_2.png"
 import home_leader_3 from "../../../assets/images/home/home_leader/home_leader_3.png"
+import home_leader_4 from "../../../assets/images/home/home_leader/home_leader_4.png"
+import home_leader_5 from "../../../assets/images/home/home_leader/home_leader_5.png"
+import home_leader_6 from "../../../assets/images/home/home_leader/home_leader_6.png"
+import home_leader_7 from "../../../assets/images/home/home_leader/home_leader_7.png"
+import home_leader_8 from "../../../assets/images/home/home_leader/home_leader_8.png"
 
 const listLeader = [
-    {
-        urlImage: home_leader_1,
-        name: "Nam Nguyễn, 34 tuổi",
-        location: "Hà Nội",
-        des: "“Tôi đã mua xe ô tô và nhà sau chỉ 3 tháng từ khi làm đại ý cho Dưỡng Sinh Ngũ Hành. Tôi thật vui khi đã và đang đóng góp một phần không nhỏ cho công ty”",
-        isVideo: true,
-    },
+    // {
+    //     urlImage: home_leader_1,
+    //     name: "Nam Nguyễn, 34 tuổi",
+    //     location: "Hà Nội",
+    //     des: "“Tôi đã mua xe ô tô và nhà sau chỉ 3 tháng từ khi làm đại ý cho Dưỡng Sinh Ngũ Hành. Tôi thật vui khi đã và đang đóng góp một phần không nhỏ cho công ty”",
+    //     isVideo: true,
+    // },
     {
         urlImage: home_leader_2,
-        name: "Tuấn Trần, 44 tuổi",
-        location: "Hà Nội",
-        des: "“Tôi đã mua xe ô tô và nhà sau chỉ 3 tháng từ khi làm đại ý cho Dưỡng Sinh Ngũ Hành. Tôi thật vui khi đã và đang đóng góp một phần không nhỏ cho công ty”",
+        name: "Mai Loan",
+        location: "Vĩnh Tường - Vĩnh Phúc",
+        des: "“Mua được chiếc xe cùng với sự hỗ trợ của Phó Chủ Tịch Đoan Trang khiến tôi cảm thấy vô cùng hạnh phúc.”",
     },
     {
         urlImage: home_leader_3,
-        name: "Chung Đức, 22 tuổi",
+        name: "Hưng Phùng - 0979.116.049",
+        location: "Vĩnh phúc",
+        des: "“Tôi rất hạnh phúc vì đã có cơ hội mua được chiếc xe mới, một bước quan trọng trong cuộc sống, đặc biệt khi làm việc cùng phó chủ tịch Đoan Trang”",
+    },
+    {
+        urlImage: home_leader_4,
+        name: "Vợ chồng Mai Lịch",
         location: "Hà Nội",
-        des: "“Tôi đã mua xe ô tô và nhà sau chỉ 3 tháng từ khi làm đại ý cho Dưỡng Sinh Ngũ Hành. Tôi thật vui khi đã và đang đóng góp một phần không nhỏ cho công ty”",
+        des: "“Rất hạnh phúc khi được mua được xe khi làm việc cùng phó chủ tịch Đoan Trang.”",
+    },
+    {
+        urlImage: home_leader_5,
+        name: "Đoàn Tươi - 033.675.0346",
+        location: "Hải Phòng",
+        des: "“Một cảm giác vô cùng hạnh phúc khi tôi có cơ hội làm việc cùng phó chủ tịch Đoan Trang và cuối cùng đã mua được chiếc xe mới của mình”",
+    },
+    {
+        urlImage: home_leader_6,
+        name: "Linh Vũ - 0984.034.557",
+        location: "Tuyên Quang",
+        des: "“Tôi rất hạnh phúc khi được làm việc cùng phó chủ tịch Đoan Trang và sau một thời gian cống hiến, tôi đã có đủ tiền để mua được chiếc xe mơ ước.”",
+    },
+    {
+        urlImage: home_leader_7,
+        name: "Thanh Tâm - 036 6125392",
+        location: "Yên Bái",
+        des: "“Tôi vô cùng hạnh phúc khi được mua được chiếc xe mới, nhờ vào cơ hội làm việc cùng phó chủ tịch Đoan Trang”",
+    },
+    {
+        urlImage: home_leader_8,
+        name: "Thơm Đặng - 0363.769.129",
+        location: "Yên Bái",
+        des: "“Hạnh phúc vô tận khi mua được chiếc xe mới, nhờ sự hỗ trợ và cùng làm việc cùng Phó Chủ tịch Đoan Trang”",
     },
 ]
 
@@ -74,7 +109,7 @@ const HomeLeader = () => {
         slidesToScroll: 1,
         arrows: true,
         autoplay: true, // Enable autoplay
-        autoplaySpeed: 2000, // Set the autoplay speed in milliseconds
+        autoplaySpeed: 5000, // Set the autoplay speed in milliseconds
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
