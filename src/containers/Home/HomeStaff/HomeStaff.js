@@ -44,6 +44,29 @@ function SamplePrevArrow(props) {
         </button>
     );
 }
+const Vid = ({ id, src, play }) => {
+    const vidRef = React.createRef();
+    React.useEffect(() => {
+        if (play) {
+            vidRef.current?.play();
+            const active = vidRef.current?.closest(".slick-active");
+            console.log({
+                play,
+                active
+            });
+            if (!active) {
+                vidRef.current?.pause();
+            }
+        } else {
+            vidRef.current?.pause();
+        }
+    }, [play]);
+    return (
+        <video className={`video-${id}`} ref={vidRef} width="400" controls>
+            <source src={src} type="video/mp4" />
+        </video>
+    );
+};
 
 const HomeStaff = () => {
 
@@ -84,6 +107,7 @@ const HomeStaff = () => {
             }
         ]
     };
+    const [curIdx, setCurIdx] = React.useState(0);
     return (
         <div id="home-staff" className="home-box home-staff">
             <div className="container">
@@ -98,8 +122,13 @@ const HomeStaff = () => {
                     <div className="row gutters-0">
                         <div className="col-12">
                             <div className="service-content">
-                                <Slider autoplay={true} {...settings} >
+                                <Slider autoplay={true} {...settings} beforeChange={(cur, next) => {
+                                    setCurIdx(next);
+                                }}>
                                     {listService && listService.length > 0 && listService.map((item, index) => {
+                                        if (item.indexOf('.mp4') != -1) {
+                                            return <Vid id={index} src={item} play={index === curIdx} />
+                                        }
                                         return (
                                             <div className="service-item" key={index}>
                                                 <div className="service-image">

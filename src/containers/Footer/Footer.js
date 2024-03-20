@@ -28,24 +28,30 @@ const Footer = () => {
                         <div className="column column-2">
                             <div className="block">
                                 <div className="address-company">
-                                    Trụ sở: Số 12/102 Ngụy Như Kon Tum, Nhân
-                                    Chính, Thanh Xuân, Hà Nội
+                                    Trụ sở: <strong>Số 12/102 Ngụy Như Kon Tum, Nhân
+                                        Chính, Thanh Xuân, Hà Nội</strong>
                                 </div>
                                 <div className="phone-company">
                                     Liên Hệ: {" "}
                                     <span className="highlight">
-                                        0986.008.996
+                                        <a href="tel:0986.008.996">0986.008.996</a>
                                     </span>
                                 </div>
                                 <div className="email-company">
-                                    Email:
-                                    <p style={{ marginTop: "1rem" }}><strong>nguhanhgroup@gmail.com</strong></p>
-                                    <p style={{ marginBottom: "unset" }}><strong>tuyendung.nguhanhgroup@gmail.com</strong></p>
+                                    Email: {" "}
+                                    <strong className="highlight"><a href="mailto:nguhanhgroup@gmail.com">nguhanhgroup@gmail.com</a></strong>
                                 </div>
+                                <div className="facebook">
+                                    Facebook: <a href='https://www.facebook.com/trang.nhim.96' target='_blank'><strong className="highlight">trang.nhim.96</strong></a>
+                                </div>
+                                <div className="youtube">
+                                    Youtube: <a href=' https://www.youtube.com/@trangdoan1631' target='_blank'><strong className="highlight">@trangdoan1631</strong></a>
+                                </div>
+
                                 <div className="hotline-company">
-                                    Hotline tuyển dụng: {" "}
+                                    Hotline: {" "}
                                     <span className="highlight">
-                                        0986.008.996
+                                        <a href="tel:0986.008.996">0986.008.996</a>
                                     </span>
                                 </div>
                             </div>
