@@ -77,17 +77,18 @@ const Header = () => {
                             </ul>
                         </div>
                         <div className="container-menu-header__mobile">
-                            {/*<div className="container-menu-header__mobile-logo">*/}
-                            {/*/!*    Logo*!/*/}
-                            {/*    logo*/}
-                            {/*</div>*/}
+
                             <div className="container-menu-header__mobile-logo-menu" onClick={() => setShowMenuMobile(!showMenuMobile)}>
                                 <div style={{ fontSize: 24, color: "#fff" }}>
                                     {/*    icon 3 gach*/}
                                     <i className="fa fa-bars" aria-hidden="true"></i>
                                 </div>
                             </div>
-
+                            <button className="btn-header" onClick={() => {
+                                setOpenModal(!isOpenModal);
+                                setShowMenuMobile(!showMenuMobile)
+                            }}>Liên hệ
+                            </button>
                             <div className="menu-content-mobile" style={showMenuMobile ? { transform: "translateX(0%)" } : { transform: "translateX(-100%)" }}>
                                 <div>
                                     <div className="menu-content-mobile-top">

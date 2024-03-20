@@ -45,7 +45,10 @@ const Footer = () => {
                                     Facebook: <a href='https://www.facebook.com/trang.nhim.96' target='_blank'><strong className="highlight">trang.nhim.96</strong></a>
                                 </div>
                                 <div className="youtube">
-                                    Youtube: <a href=' https://www.youtube.com/@trangdoan1631' target='_blank'><strong className="highlight">@trangdoan1631</strong></a>
+                                    Youtube: <a href='https://www.youtube.com/channel/UC7kVbCpaELcj5cEwkurcuMQ' target='_blank'><strong className="highlight">Trang Doan</strong></a>
+                                </div>
+                                <div className="youtube">
+                                    TikTok: <a href='https://www.tiktok.com/@doantrangyb_87?_t=8kpAQ9lBhEA&_r=1' target='_blank'><strong className="highlight">Doantrangyb_87</strong></a>
                                 </div>
 
                                 <div className="hotline-company">
