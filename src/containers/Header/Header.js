@@ -86,7 +86,6 @@ const Header = () => {
                             </div>
                             <button className="btn-header" onClick={() => {
                                 setOpenModal(!isOpenModal);
-                                setShowMenuMobile(!showMenuMobile)
                             }}>Liên hệ
                             </button>
                             <div className="menu-content-mobile" style={showMenuMobile ? { transform: "translateX(0%)" } : { transform: "translateX(-100%)" }}>
